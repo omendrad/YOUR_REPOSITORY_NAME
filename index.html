@@ -1,0 +1,956 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#fff8f1">
+  <meta name="description" content="Digital Marketing Driven by Research, Strategy &amp; Growth I help businesses understand their market, connect with the right audience, strengthen their digital">
+  <title>Home - sudhapriya.com</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+/* Shared homepage design system */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap');
+:root{--paper:#f7f5f0;--white:#fffefa;--ink:#20251f;--muted:#696f65;--line:#dedfd5;--accent:#d6f078;--sage:#e5eadb;--deep:#1e2a23;--max:1220px}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:90px}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:'DM Sans',sans-serif;font-size:17px;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+img{display:block;max-width:100%}
+h1,h2,h3,h4,p{margin-top:0}
+.site-header{height:86px;display:flex;align-items:center;justify-content:space-between;padding:0 max(32px,calc((100vw - var(--max))/2));position:sticky;top:0;z-index:20;background:#f7f5f0eF;backdrop-filter:blur(18px);border-bottom:1px solid #dedfd580}
+.wordmark{display:inline-flex;align-items:center;justify-content:center;height:90px;padding:0}
+.wordmark img{display:block;height:90px;width:280px;max-width:100%;object-fit:contain;object-position:center}
+.wordmark span{color:#829c44}
+.nav{display:flex;align-items:center;gap:34px;font-size:13px;font-weight:600}.nav>a:not(.nav-cta){color:#62695f;transition:color .2s}.nav>a:hover{color:#111}.nav-cta{padding:13px 18px;border:1px solid var(--ink);border-radius:3px}.nav-cta span{margin-left:12px}
+.menu-toggle{display:none;border:0;background:none;padding:8px}
+.section-wrap{max-width:var(--max);margin:0 auto;padding-left:34px;padding-right:34px}
+.hero{min-height:650px;display:grid;grid-template-columns:1.02fr .98fr;align-items:center;gap:5%;padding-top:64px;padding-bottom:84px;position:relative}
+.hero:before{content:"";position:absolute;z-index:-1;width:410px;height:410px;left:-240px;top:80px;border-radius:50%;background:#e5eadb}
+.hero-copy{position:relative;z-index:2;padding:20px 0}
+.hero-copy:before{content:"";display:block;width:48px;height:4px;background:#8ba34e;margin-bottom:30px}
+h1{font:600 clamp(48px,5.3vw,76px)/1.02 Manrope,sans-serif;letter-spacing:-4.2px;max-width:660px;margin:0 0 27px}
+h1 em{font-style:normal;color:#778e44}
+.hero-description{max-width:520px;color:#646b60;font-size:17px;line-height:1.9;margin-bottom:34px}
+.hero-actions{display:flex;align-items:center;gap:26px}
+.button{display:inline-flex;align-items:center;justify-content:center;gap:28px;padding:16px 20px;font-size:13px;font-weight:700;transition:transform .2s,background .2s;border-radius:3px}
+.button:hover{transform:translateY(-3px)}
+.button-dark{background:var(--ink);color:white}.button-dark:hover{background:#354239}
+.text-link{font-size:13px;font-weight:700;border-bottom:1px solid #a9b09e;padding-bottom:6px}
+.hero-visual{position:relative;min-height:500px;display:flex;align-items:center;justify-content:center}
+.hero-photo{position:absolute;overflow:hidden;box-shadow:0 24px 65px #20251f1c}
+.hero-photo img{width:100%;height:100%;object-fit:cover;transition:transform .7s}
+.hero-photo:hover img{transform:scale(1.04)}
+.hero-photo-main{width:78%;height:420px;right:5%;top:20px;border-radius:180px 180px 8px 8px;transform:rotate(2deg)}
+.hero-photo-small{width:48%;height:190px;left:-1%;bottom:18px;border:9px solid var(--paper);border-radius:4px;transform:rotate(-4deg)}
+.hero-stamp{position:absolute;right:-1%;top:15px;width:116px;height:116px;border-radius:50%;background:var(--accent);display:flex;align-items:center;justify-content:center;flex-direction:column;font-size:8px;font-weight:800;letter-spacing:1.5px;line-height:1.7;transform:rotate(9deg);box-shadow:0 12px 30px #20251f16}
+.hero-stamp strong{font-size:14px;line-height:1}
+.hero-portrait{position:absolute;right:1%;bottom:14px;width:82px;height:82px;border-radius:50%;overflow:hidden;border:4px solid var(--paper);box-shadow:0 8px 25px #20251f30}
+.hero-portrait img{width:100%;height:100%;object-fit:cover;object-position:50% 18%}
+.section-pad{padding-top:112px;padding-bottom:120px}
+.section-kicker{display:flex;align-items:center;gap:18px;color:#747b6d;font-size:10px;letter-spacing:1.8px;font-weight:700;margin-bottom:58px}
+.kicker-rule{height:1px;background:var(--line);flex:1}
+.about{border-top:1px solid var(--line)}
+.about-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:13%;padding:0 6%}
+.about-heading h2,.section-heading h2{font:600 clamp(38px,4.2vw,56px)/1.1 Manrope,sans-serif;letter-spacing:-2.8px;margin-bottom:27px}
+.about-heading h3{font:500 22px/1.5 Manrope,sans-serif;letter-spacing:-.5px;max-width:360px;margin:0}
+.about-mark{font:150px/.8 Georgia,serif;color:#c8d5b2;margin-top:36px}
+.about-copy{border-left:1px solid var(--line);padding-left:42px}
+.about-copy h4{font:700 20px/1.5 Manrope,sans-serif;letter-spacing:-.5px;margin-bottom:20px}
+.about-copy p{color:var(--muted);line-height:1.95;font-size:16px;margin-bottom:18px}
+.about-actions{display:flex;align-items:center;gap:24px;margin-top:28px}
+.button-outline{border:1px solid #cdd0c6}.button-outline:hover{background:#fff}
+.services{background:#e9ecdf;max-width:none;padding-left:max(34px,calc((100vw - var(--max))/2 + 34px));padding-right:max(34px,calc((100vw - var(--max))/2 + 34px));position:relative;overflow:hidden}
+.services:after{content:"";position:absolute;width:360px;height:360px;border:1px solid #cfd6c0;border-radius:50%;right:-200px;top:130px;pointer-events:none}
+.services .section-kicker,.approach .section-kicker{max-width:var(--max);margin-left:auto;margin-right:auto}
+.section-heading{display:flex;justify-content:space-between;align-items:end;gap:40px;margin-bottom:42px}
+.section-heading h2{max-width:600px;margin-bottom:0}
+.section-intro{max-width:300px;color:#6d7568;font-size:15px;line-height:1.8;margin:0 0 6px}
+.service-visual-band{display:grid;grid-template-columns:1.2fr .9fr .9fr;gap:14px;max-width:var(--max);margin:0 auto 32px}
+.visual-band-card{height:165px;position:relative;overflow:hidden;border-radius:5px;background:#d8dece}
+.visual-band-card:after{content:"";position:absolute;inset:35% 0 0;background:linear-gradient(transparent,#1119)}
+.visual-band-card img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
+.visual-band-card:hover img{transform:scale(1.05)}
+.visual-band-card span{position:absolute;bottom:15px;left:17px;color:white;z-index:1;font:600 14px Manrope,sans-serif}
+.services-grid{max-width:var(--max);margin:auto;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;position:relative;z-index:1}
+.service-card{background:var(--white);padding:26px 25px 29px;min-height:385px;transition:transform .25s,box-shadow .25s;position:relative;border-radius:5px;overflow:hidden;border:1px solid #ffffff}
+.service-card:hover{transform:translateY(-5px);box-shadow:0 20px 45px #303b2414}
+.service-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:27px}
+.service-number{font-size:10px;color:#8a9183;letter-spacing:1px}
+.service-icon{width:32px;height:32px;border:1px solid #d9ddd1;border-radius:50%;display:grid;place-items:center;font-size:14px;color:#6c8144}
+.service-card h3{font:700 19px/1.3 Manrope,sans-serif;letter-spacing:-.5px;margin-bottom:13px}
+.service-card p{font-size:14px;line-height:1.85;color:#6a7165;margin-bottom:22px}
+.service-card ul{list-style:none;padding:14px 0 0;margin:0;border-top:1px solid #e2e4dc;display:grid;grid-template-columns:1fr;gap:7px}
+.service-card li{font-size:13px;color:#5f665a;display:flex;gap:8px;align-items:flex-start}
+.service-card li:before{content:"↗";color:#8da64d;font-size:10px}
+.approach{border-top:1px solid var(--line)}
+.approach .section-heading{align-items:start;margin-bottom:50px}
+.approach .section-intro{max-width:390px;margin-top:12px}
+.approach-list{border-top:1px solid var(--line)}
+.approach-item{display:grid;grid-template-columns:70px 1fr 40px;gap:20px;align-items:start;padding:29px 14px;border-bottom:1px solid var(--line);transition:background .2s,padding .2s}
+.approach-item:hover{background:#eeefe8;padding-left:24px;padding-right:4px}
+.approach-index{font-size:11px;color:#858a7f;padding-top:6px}
+.approach-item h3{font:700 17px/1.4 Manrope,sans-serif;letter-spacing:-.3px;margin-bottom:7px}
+.approach-item p{font-size:14px;line-height:1.8;color:#6a6e65;margin-bottom:0;max-width:720px}
+.approach-arrow{font-size:20px;text-align:right;color:#8ba344}
+.project{padding-top:8px;padding-bottom:100px}
+.project-card{background:var(--deep);color:#fff;position:relative;overflow:hidden;min-height:440px;padding:75px 8%;display:grid;grid-template-columns:1fr 180px;gap:40px;align-items:center;border-radius:6px}
+.project-content{position:relative;z-index:2;max-width:680px}
+.project-content .eyebrow{color:#b6c29f}
+.project-content h2{font:600 clamp(40px,4.5vw,62px)/1.06 Manrope,sans-serif;letter-spacing:-3px;margin-bottom:19px}
+.project-original{color:#c0c8ba;font-size:14px;max-width:530px;line-height:1.8;margin-bottom:35px}
+.project-content h3{font-size:11px;letter-spacing:2px;margin:0 0 13px;color:#d4ed91}
+.project-content p:not(.eyebrow){color:#c2c9be;font-size:14px;line-height:1.8;max-width:590px}
+.button-light{background:var(--accent);color:#20251f;margin-top:13px}.button-light:hover{background:#e5ff9b}
+.project-side{height:250px;display:flex;align-items:center;justify-content:center;flex-direction:column;position:relative;z-index:1}
+.project-circle{width:145px;height:145px;border:1px solid #667263;border-radius:50%;display:grid;place-items:center;font:800 36px Manrope,sans-serif;color:#d0e7a3}
+.project-side-line{width:1px;height:60px;background:#535a4b;margin:16px 0}
+.project-decor{position:absolute;right:-180px;top:-240px;width:680px;height:680px;border:1px solid #ffffff12;border-radius:50%}
+.project-decor span{position:absolute;border:1px solid #ffffff12;border-radius:50%;inset:60px}
+.project-decor span:nth-child(2){inset:120px}.project-decor span:nth-child(3){inset:180px}
+.footer{padding:52px 0 28px;background:#05070a}
+.footer-inner{max-width:var(--max);margin:0 auto;padding:0 34px;border:none;border-radius:0;background:#05070a;display:grid;grid-template-columns:220px 1fr auto;align-items:end;gap:26px;box-shadow:none}
+.footer-brand,.footer-copy,.footer-links,.footer-bottom{position:relative;z-index:1}
+.footer-brand{display:flex;flex-direction:column;align-items:flex-start;gap:12px}
+.footer-brand .wordmark{width:auto;height:auto;border-radius:0;background:transparent;display:inline-flex;align-items:center;justify-content:center;padding:0;overflow:visible}
+.footer-brand .wordmark img{display:block;width:300px;height:auto;max-width:100%;object-fit:contain;object-position:center;filter:none}
+.footer-brand p{margin:0;color:#f5f1ee;font-size:12px;letter-spacing:.14em;text-transform:uppercase;font-weight:600;line-height:1.6}
+.footer-copy p{margin:0;color:rgba(255,255,255,.72);font-size:14px;line-height:1.8;max-width:440px;font-weight:400}
+.footer-links{display:flex;justify-content:flex-end;align-items:center;flex-wrap:wrap;gap:12px 18px;font-size:12px;color:#fff}
+.footer-links a{display:inline-flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;padding:12px 10px;border:1px solid rgba(255,255,255,.12);border-radius:18px;background:rgba(255,255,255,.04);color:rgba(255,255,255,.82);transition:all .2s ease;text-decoration:none;letter-spacing:0;text-transform:none;min-width:92px;min-height:86px}
+.footer-links a:hover,.footer-bottom a:hover{color:#fff;background:rgba(255,255,255,.08);transform:translateY(-1px)}
+.footer-links a img{display:block;width:30px;height:30px;object-fit:cover;border-radius:50%;background:#fff;box-shadow:0 6px 16px rgba(118,88,255,.25)}
+.footer-links a[href*="wa.me"] img{width:38px;height:38px;transform:scale(1.08)}
+.footer-bottom{grid-column:1/-1;border-top:1px solid rgba(255,255,255,.12);padding-top:18px;margin-top:18px;display:flex;align-items:center;justify-content:space-between;gap:20px;color:rgba(255,255,255,.7);font-size:11px;letter-spacing:.08em;text-transform:uppercase}
+.footer-bottom span{display:inline-block}
+.footer-credit{color:rgba(255,255,255,.92);font-weight:600;letter-spacing:.12em}
+.footer-credit a{color:#fff;text-decoration:none;transition:opacity .2s ease,transform .2s ease}
+.footer-credit a:hover{opacity:.8;transform:translateY(-1px)}
+.footer-bottom .copyright{display:inline-flex;align-items:center;gap:8px;padding:8px 12px;border:1px solid rgba(255,255,255,.08);border-radius:999px;background:rgba(255,255,255,.03);color:rgba(255,255,255,.9);font-weight:600;letter-spacing:.14em}
+.footer-bottom .copyright:before{content:"©";font-size:12px;opacity:.9}
+.reveal{opacity:0;transform:translateY(18px);transition:opacity .65s ease,transform .65s ease}
+.reveal.is-visible{opacity:1;transform:translateY(0)}
+@media(max-width:900px){
+ .hero{gap:3%;grid-template-columns:1.05fr .95fr;padding-top:50px}.hero-visual{min-height:430px}.hero-photo-main{height:355px}.hero-photo-small{height:150px}
+ .about-grid{padding:0 2%;gap:7%}.about-copy{padding-left:28px}.services-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.service-card{min-height:350px}
+ .section-pad{padding-top:85px;padding-bottom:90px}.project-card{padding:55px 6%}
+}
+@media(max-width:640px){
+ .site-header{height:72px;padding:0 21px}.wordmark{font-size:22px}.menu-toggle{display:flex;flex-direction:column;gap:5px;z-index:22}.menu-toggle span{height:1.5px;width:23px;background:var(--ink);display:block}
+ .nav{display:none;position:absolute;top:64px;left:14px;right:14px;padding:20px;background:#fff;border:1px solid var(--line);box-shadow:0 20px 50px #0000000d;align-items:stretch;gap:0;flex-direction:column}.nav.open{display:flex}.nav a{padding:13px 8px}.nav .nav-cta{margin-top:8px;text-align:center}
+ .section-wrap{padding-left:21px;padding-right:21px}.hero{display:flex;flex-direction:column;align-items:stretch;padding-top:48px;padding-bottom:65px;gap:30px;min-height:auto}.hero-copy{order:1}.hero-visual{order:2;min-height:370px;width:100%;max-width:430px;margin:auto}
+ h1{font-size:clamp(43px,11vw,60px);letter-spacing:-2.8px}.hero-description{font-size:14px}.hero-actions{gap:18px;flex-wrap:wrap}.hero-photo-main{width:78%;height:310px;right:5%;top:10px}.hero-photo-small{width:48%;height:130px;left:0;bottom:10px;border-width:6px}.hero-stamp{width:90px;height:90px;font-size:7px;right:0}.hero-portrait{width:66px;height:66px;right:0;bottom:5px}
+ .section-pad{padding-top:70px;padding-bottom:76px}.section-kicker{margin-bottom:40px}.about-grid{grid-template-columns:1fr;gap:30px;padding:0}.about-heading h2,.section-heading h2{font-size:40px}.about-heading h3{font-size:20px;max-width:420px}.about-mark{display:none}.about-copy{padding-left:0;border-left:0;border-top:1px solid var(--line);padding-top:28px}.about-copy h4{font-size:18px}
+ .services{padding-left:21px;padding-right:21px}.section-heading{display:block;margin-bottom:30px}.section-intro{margin-top:17px}.service-visual-band{grid-template-columns:1fr 1fr;gap:9px;margin-bottom:20px}.visual-band-card{height:125px}.visual-band-card:first-child{grid-column:1/-1;height:160px}.visual-band-card span{font-size:12px;left:12px;bottom:12px}
+ .services-grid{grid-template-columns:1fr;gap:10px}.service-card{padding:24px;min-height:0}.service-card h3{font-size:20px}.service-card p{font-size:13px}.service-card li{font-size:12px}
+ .approach .section-heading{display:block}.approach .section-intro{margin-top:20px}.approach-item{grid-template-columns:34px 1fr 20px;gap:12px;padding:23px 0}.approach-item h3{font-size:15px;overflow-wrap:anywhere}.approach-item p{font-size:12px}
+ .project{padding-top:0;padding-bottom:60px}.project-card{padding:43px 25px;grid-template-columns:1fr;min-height:auto}.project-content h2{font-size:40px}.project-side{display:none}.project-original{font-size:12px}
+ .footer-inner{grid-template-columns:1fr;gap:18px;padding:24px 20px}.footer-brand,.footer-copy,.footer-links{justify-content:flex-start}.footer-links{justify-content:flex-start}.footer-bottom{flex-direction:column;align-items:flex-start;gap:10px;margin-top:6px}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.reveal{opacity:1;transform:none;transition:none}*,*:before,*:after{animation-duration:.01ms!important;transition-duration:.01ms!important}}
+
+
+/* ===== Visual refresh: vibrant gradients, layered imagery, polished interactions ===== */
+:root{
+  --paper:#fff8f1;--white:#fffdf9;--ink:#202033;--muted:#66677b;--line:#e8dfdc;
+  --accent:#c9f36b;--sage:#e5eadb;--deep:#242047;--violet:#7958ff;--pink:#ff6fae;
+  --orange:#ff9b63;--aqua:#70e1d1;--max:1220px;
+}
+body{background:var(--paper);color:var(--ink);overflow-x:hidden}
+::selection{background:#c9f36b;color:#202033}
+.site-header{background:rgba(255,248,241,.84);border-bottom-color:#e6dcd888;box-shadow:0 5px 28px #362a4b05}
+.wordmark span{background:linear-gradient(135deg,#ff7aa9,#7658ff 60%,#27bfae);-webkit-background-clip:text;background-clip:text;color:transparent}
+.nav-cta{border-radius:999px;background:linear-gradient(110deg,#c9f36b,#a4edce);border:0;padding:14px 20px;box-shadow:0 6px 18px #8dcf7630}
+.nav-cta span{font-size:16px}
+.hero{min-height:690px;padding-top:66px;padding-bottom:92px}
+.hero:before{width:600px;height:600px;left:-360px;top:20px;background:radial-gradient(circle at 35% 35%,#ffb4ce 0%,#ffd8a4 34%,#f7d9ff 64%,transparent 72%);filter:blur(4px);opacity:.78}
+.hero-copy:before{width:66px;height:6px;border-radius:8px;background:linear-gradient(90deg,#ff7aa9,#8063ff,#67d8c4);margin-bottom:28px}
+h1{font-size:clamp(50px,5.5vw,79px);line-height:1.01;letter-spacing:-4.8px;max-width:690px}
+h1 em{background:linear-gradient(100deg,#ff6d9e 0%,#885dff 45%,#21bba9 100%);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero-description{font-size:15px;max-width:535px;color:#69677b}
+.button{border-radius:999px;padding:17px 23px;gap:30px}
+.button-dark{background:linear-gradient(115deg,#282144,#4a367b 65%,#6e4bd7);box-shadow:0 12px 25px #4b357b2b}
+.button-dark:hover{background:linear-gradient(115deg,#332456,#7958ff)}
+.text-link{border-bottom-color:#b7a3ef}
+.hero-visual{min-height:535px;isolation:isolate}
+.hero-glow{position:absolute;z-index:-2;border-radius:50%;filter:blur(2px);pointer-events:none}
+.hero-glow-one{width:360px;height:360px;right:0;top:30px;background:radial-gradient(circle at 35% 35%,#ffd49a,#ff9dbd 45%,#b9a3ff 75%,transparent 76%);opacity:.88}
+.hero-glow-two{width:270px;height:270px;left:-18px;bottom:0;background:radial-gradient(circle at 40% 40%,#a9f0d6,#a9d9ff 50%,transparent 73%);opacity:.9}
+.hero-image{position:absolute;overflow:hidden;box-shadow:0 26px 65px #392b5b24;border:7px solid #fffaf5}
+.hero-image img{width:100%;height:100%;object-fit:cover;transition:transform .8s cubic-bezier(.2,.8,.2,1);filter:saturate(1.08)}
+.hero-image:hover img{transform:scale(1.07)}
+.hero-image-main{width:80%;height:430px;right:4%;top:32px;border-radius:180px 180px 22px 22px;transform:rotate(3deg)}
+.hero-image-side{width:52%;height:220px;left:-1%;bottom:18px;border-radius:16px;transform:rotate(-5deg)}
+.hero-profile{position:absolute;z-index:2;right:0;bottom:8px;display:flex;align-items:center;gap:12px;padding:10px 15px 10px 10px;background:#fffdf7f2;border:1px solid #ffffff;border-radius:17px;box-shadow:0 15px 45px #30234620;backdrop-filter:blur(14px)}
+.hero-profile img{width:46px;height:46px;object-fit:cover;object-position:50% 15%;border-radius:13px}
+.hero-profile strong,.hero-profile small{display:block}
+.hero-profile strong{font:700 12px Manrope,sans-serif}
+.hero-profile small{font-size:10px;color:#777489;margin-top:4px}
+.profile-arrow{font-size:18px;color:#7658ff;margin-left:10px}
+.hero-orbit-label{position:absolute;left:0;top:50px;background:#282144;color:#fff;border-radius:999px;padding:12px 16px;font-size:10px;letter-spacing:.2px;box-shadow:0 12px 30px #28214426;transform:rotate(-4deg)}
+.orbit-dot{display:inline-block;width:7px;height:7px;border-radius:50%;background:#c9f36b;margin-right:8px;box-shadow:0 0 0 4px #c9f36b25}
+.hero-sticker{position:absolute;right:-2%;top:5px;width:105px;height:105px;border-radius:50%;background:linear-gradient(140deg,#d2ff83,#77e2d0);display:flex;flex-direction:column;align-items:center;justify-content:center;font-size:8px;letter-spacing:1.4px;font-weight:800;line-height:1.7;transform:rotate(11deg);box-shadow:0 14px 32px #5da88e35;border:5px solid #fff8f1}
+.hero-sticker b{font-size:24px;line-height:1.15;color:#4a3b7e}
+.section-pad{padding-top:120px;padding-bottom:125px}
+.section-kicker{letter-spacing:2.2px;color:#80778e}
+.kicker-rule{background:linear-gradient(90deg,#ff9ebc,#9a83ff,#70e1d1);height:2px}
+.about{position:relative}
+.about:before{content:"";position:absolute;right:-220px;top:120px;width:360px;height:360px;border-radius:50%;background:radial-gradient(circle,#f3d4ff 0%,#f3d4ff55 40%,transparent 72%);pointer-events:none}
+.about-heading h2,.section-heading h2{letter-spacing:-3px}
+.about-heading h2{background:linear-gradient(105deg,#29203f,#7658ff 60%,#ff6fae);-webkit-background-clip:text;background-clip:text;color:transparent}
+.about-mark{color:#e6b8d9;font-size:170px;text-shadow:8px 8px 0 #f4dbe9}
+.about-copy{border-left:2px solid transparent;border-image:linear-gradient(180deg,#ff9ebc,#9c85ff,#70e1d1) 1}
+.button-outline{border:1px solid #d5c7f4;border-radius:999px;background:#fffaf6}
+.button-outline:hover{background:#f0eaff}
+.services{background:linear-gradient(135deg,#f4f0ff 0%,#f1fbf3 45%,#fff0f5 100%);position:relative}
+.services:before{content:"";position:absolute;left:-200px;top:200px;width:460px;height:460px;background:radial-gradient(circle,#ffb8d0 0%,#ffb8d040 48%,transparent 72%);pointer-events:none}
+.services:after{width:500px;height:500px;border-color:#d7c7ff;right:-260px;top:150px}
+.services .section-kicker{position:relative;z-index:1}
+.section-heading h2{background:linear-gradient(110deg,#282144 10%,#7858ff 60%,#e66caa);-webkit-background-clip:text;background-clip:text;color:transparent}
+.section-intro{color:#716a85}
+.service-visual-band{grid-template-columns:1.18fr .9fr .9fr;gap:16px;position:relative;z-index:1;margin-bottom:28px}
+.visual-band-card{height:190px;border-radius:18px;box-shadow:0 15px 35px #392b5b13;isolation:isolate}
+.visual-band-card:after{inset:15% 0 0;background:linear-gradient(180deg,transparent 0%,#17112b0d 30%,#211739c9 100%)}
+.visual-band-card:first-child{border-radius:70px 16px 16px 16px}
+.visual-band-card img{filter:saturate(1.12);transition:transform .7s,filter .5s}
+.visual-band-card:hover img{transform:scale(1.08);filter:saturate(1.35)}
+.visual-band-card span{bottom:17px;left:18px;display:flex;align-items:center;gap:20px;font:700 13px Manrope,sans-serif;letter-spacing:.1px}
+.visual-band-card span b{font-size:17px;color:#d6ff8a}
+.services-grid{gap:17px}
+.service-card{border:1px solid #fff;border-radius:17px;background:linear-gradient(145deg,#fffefa 0%,#fff 58%,#faf7ff 100%);padding:28px 27px 30px;min-height:390px;box-shadow:0 6px 22px #47366308;transition:transform .3s,box-shadow .3s,border-color .3s}
+.service-card:before{content:"";position:absolute;left:0;top:0;width:100%;height:4px;background:linear-gradient(90deg,#ff80ac,#8a6bff,#71dfd0);opacity:.8}
+.service-card:after{content:"";position:absolute;right:-55px;top:-65px;width:130px;height:130px;border-radius:50%;background:radial-gradient(circle,#e9e0ff 0%,#e9e0ff00 70%);pointer-events:none}
+.service-card:hover{transform:translateY(-8px);box-shadow:0 24px 50px #45336d19;border-color:#d8cdfd}
+.service-number{font-weight:700;color:#8d7cbd}
+.service-icon{width:39px;height:39px;border:0;background:linear-gradient(135deg,#ffe0ed,#e6deff 58%,#d9fff2);color:#6144a8;font-size:17px;box-shadow:0 5px 15px #9676c51c}
+.service-card h3{font-size:19px;position:relative;z-index:1}
+.service-card p{color:#737185}
+.service-card ul{border-top:1px solid #ece6f5}
+.service-card li:before{color:#8c6dff;font-weight:800}
+.approach{background:linear-gradient(180deg,#fff8f1 0%,#fffdf9 100%);position:relative;overflow:hidden}
+.approach:after{content:"";position:absolute;right:-280px;bottom:-280px;width:520px;height:520px;border-radius:50%;background:radial-gradient(circle,#c9f5e5 0%,#d9f6ef55 42%,transparent 72%);pointer-events:none}
+.approach .section-kicker,.approach .section-heading,.approach-list{position:relative;z-index:1}
+.approach-item{border-bottom-color:#e9e0eb;grid-template-columns:70px 1fr 40px;padding-top:31px;padding-bottom:31px;transition:background .25s,padding .25s,border-radius .25s}
+.approach-item:hover{background:linear-gradient(100deg,#f5efff,#fff0f6 55%,#eafff7);padding-left:20px;padding-right:20px;border-radius:14px}
+.approach-index{color:#8a72c4;font-weight:700}
+.approach-item h3{font-size:18px}
+.approach-arrow{color:#7858ff;transition:transform .25s}
+.approach-item:hover .approach-arrow{transform:translate(4px,-4px)}
+.project-card{background:linear-gradient(120deg,#251f43 0%,#473276 50%,#7549a9 100%);border-radius:28px;box-shadow:0 30px 70px #4430692c;isolation:isolate}
+.project-card:before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 80% 20%,#ff83bd5e,transparent 30%),radial-gradient(circle at 15% 100%,#62e5cb3c,transparent 35%);z-index:-1}
+.project-decor{border-color:#ffffff25;right:-210px;top:-260px;width:760px;height:760px}
+.project-decor span{border-color:#ffffff20}
+.project-content .eyebrow{color:#d2f6a1}
+.project-content h2{letter-spacing:-3.6px}
+.project-content h3{color:#d5ff91}
+.button-light{background:linear-gradient(100deg,#d7ff83,#9cf1d5);box-shadow:0 12px 30px #1b172f35}
+.button-light:hover{background:linear-gradient(100deg,#e8ffb6,#b2ffe8)}
+.project-circle{border-color:#ffffff45;color:#e1ffad;background:linear-gradient(135deg,#ffffff0a,#ffffff14);box-shadow:inset 0 0 35px #ffffff09}
+.footer{padding-top:38px}
+.footer-bottom{border-image:linear-gradient(90deg,#ff9ebc,#9c85ff,#70e1d1) 1}
+.scroll-progress{height:3px;position:fixed;top:0;left:0;width:100%;z-index:100;background:transparent;pointer-events:none}
+.scroll-progress span{display:block;width:0;height:100%;background:linear-gradient(90deg,#ff6fae,#8c67ff,#6be1ca,#c9f36b);box-shadow:0 0 12px #9c83ff80}
+.back-to-top{position:fixed;right:24px;bottom:24px;z-index:40;width:48px;height:48px;border:0;border-radius:16px;color:#fff;background:linear-gradient(140deg,#7658ff,#ff6fae 80%);font-size:22px;box-shadow:0 12px 28px #7253b43d;cursor:pointer;opacity:0;transform:translateY(12px);pointer-events:none;transition:opacity .25s,transform .25s}
+.back-to-top.visible{opacity:1;transform:translateY(0);pointer-events:auto}
+.reveal{transition:opacity .75s ease,transform .75s cubic-bezier(.2,.8,.2,1)}
+@media(max-width:900px){
+ .hero{gap:2%}.hero-visual{min-height:470px}.hero-image-main{height:370px}.hero-sticker{width:90px;height:90px}
+ .service-visual-band{gap:10px}.visual-band-card{height:160px}
+ .service-card{border-radius:14px}
+}
+@media(max-width:640px){
+ .hero{padding-top:45px}.hero-visual{min-height:365px}.hero-image-main{height:300px;border-radius:145px 145px 17px 17px;border-width:5px}.hero-image-side{height:135px;border-width:5px;border-radius:13px}
+ .hero-orbit-label{font-size:9px;top:32px;padding:10px 12px}.hero-sticker{width:78px;height:78px;right:-1%;font-size:7px;border-width:4px}.hero-sticker b{font-size:18px}
+ .hero-profile{gap:8px;padding:7px 10px 7px 7px;border-radius:13px}.hero-profile img{width:37px;height:37px;border-radius:10px}.hero-profile strong{font-size:10px}.hero-profile small{font-size:9px}.profile-arrow{font-size:15px;margin-left:3px}
+ .section-pad{padding-top:76px;padding-bottom:80px}.services{background:linear-gradient(155deg,#f4efff,#f2fff8 48%,#fff0f5)}
+ .service-visual-band{grid-template-columns:1fr 1fr}.visual-band-card{height:125px;border-radius:12px}.visual-band-card:first-child{height:150px;border-radius:42px 12px 12px 12px}.visual-band-card span{font-size:11px;gap:10px;left:12px;bottom:12px}.visual-band-card span b{font-size:14px}
+ .service-card{min-height:0;padding:24px 22px}.service-card:after{width:100px;height:100px;right:-40px;top:-45px}
+ .approach-item:hover{padding-left:12px;padding-right:12px}.project-card{border-radius:20px}.back-to-top{right:16px;bottom:16px;width:44px;height:44px;border-radius:14px}
+}
+@media(prefers-reduced-motion:reduce){.hero-image img,.visual-band-card img,.approach-arrow{transition:none}}
+
+
+/* Portfolio section and in-page navigation */
+html{scroll-padding-top:100px}
+#portfolio,#contact{scroll-margin-top:100px}
+.portfolio{position:relative;overflow:hidden;background:linear-gradient(145deg,#fff8f1 0%,#f5f0ff 50%,#effcf7 100%)}
+.portfolio:before{content:"";position:absolute;left:-190px;top:180px;width:430px;height:430px;border-radius:50%;background:radial-gradient(circle,#ffc0d7 0%,#ffc0d740 45%,transparent 72%);pointer-events:none}
+.portfolio .section-kicker,.portfolio .section-heading,.portfolio-grid,.portfolio-note{position:relative;z-index:1}
+.portfolio-grid{display:grid;grid-template-columns:1.18fr 1fr 1fr;gap:18px}
+.portfolio-card{min-width:0;background:#fffdf9;border:1px solid #fff;border-radius:18px;overflow:hidden;box-shadow:0 12px 35px #3b2d5510;transition:transform .3s,box-shadow .3s}
+.portfolio-card:hover{transform:translateY(-7px);box-shadow:0 24px 55px #3b2d5520}
+.portfolio-image{height:250px;position:relative;overflow:hidden;background:#e8e2f5}
+.portfolio-feature .portfolio-image{height:300px}
+.portfolio-image:after{content:"";position:absolute;inset:35% 0 0;background:linear-gradient(transparent,#1f193d91)}
+.portfolio-image img{width:100%;height:100%;object-fit:cover;transition:transform .65s;filter:saturate(1.1)}
+.portfolio-card:hover .portfolio-image img{transform:scale(1.06)}
+.portfolio-tag{position:absolute;left:17px;bottom:15px;z-index:1;color:white;font-size:9px;font-weight:700;letter-spacing:1.4px}
+.portfolio-meta{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:20px}
+.portfolio-meta h3{font:700 16px/1.35 Manrope,sans-serif;letter-spacing:-.4px;margin:0 0 7px}
+.portfolio-meta p{font-size:11px;color:#777187;line-height:1.5;margin:0}
+.portfolio-arrow{display:grid;place-items:center;flex:0 0 35px;width:35px;height:35px;border-radius:50%;background:linear-gradient(135deg,#e5dcff,#ffd8e8,#d8fff0);color:#57417d;font-size:17px}
+.portfolio-note{font-size:10px;color:#827b8c;margin:20px 0 0}
+@media(max-width:900px){.portfolio-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.portfolio-feature .portfolio-image{height:250px}.portfolio-card:last-child{grid-column:1/-1}.portfolio-card:last-child .portfolio-image{height:220px}}
+@media(max-width:640px){.portfolio-grid{grid-template-columns:1fr;gap:13px}.portfolio-feature .portfolio-image,.portfolio-image{height:220px}.portfolio-card:last-child{grid-column:auto}.portfolio-card:last-child .portfolio-image{height:220px}.portfolio-meta{padding:17px}}
+
+/* Expanded portfolio and polished contact navigation */
+.nav-cta{display:inline-flex;align-items:center;gap:11px;padding:9px 10px 9px 19px!important;border-radius:999px;color:#fff!important;background:linear-gradient(110deg,#7658ff,#b45bdf 55%,#ff6fae);box-shadow:0 8px 22px #8b63d13b;transition:transform .25s,box-shadow .25s}
+.nav-cta:hover{transform:translateY(-2px);box-shadow:0 12px 28px #8b63d155}
+.nav-cta-icon{display:grid;place-items:center;width:31px;height:31px;border-radius:50%;background:#ffffff2b;font-size:17px;line-height:1}
+.portfolio-filters{display:flex;align-items:center;flex-wrap:wrap;gap:9px;margin:0 0 25px;position:relative;z-index:1}
+.portfolio-filter{display:inline-flex;align-items:center;gap:8px;border:1px solid #e4dced;background:#ffffffb8;color:#665d77;padding:11px 16px;border-radius:999px;font:600 11px 'DM Sans',sans-serif;cursor:pointer;transition:background .2s,color .2s,border-color .2s,transform .2s}
+.portfolio-filter:hover{transform:translateY(-2px);border-color:#b8a3ef}
+.portfolio-filter.active{color:#fff;border-color:transparent;background:linear-gradient(100deg,#7858ff,#c45ecb 65%,#f27fae);box-shadow:0 7px 18px #8b63d12b}
+.portfolio-filter span{font-size:9px;opacity:.8}
+.portfolio-grid{grid-template-columns:repeat(3,minmax(0,1fr));align-items:stretch}
+.portfolio-card[hidden]{display:none!important}
+.portfolio-card{display:flex;flex-direction:column}
+.portfolio-image{flex-shrink:0}
+.portfolio-meta{align-items:flex-start;min-height:93px;flex:1}
+.portfolio-meta>div{min-width:0}
+.portfolio-meta h3{font-size:15px}
+.portfolio-meta p{font-size:11px}
+.portfolio-arrow{flex-shrink:0;text-decoration:none;transition:transform .2s,box-shadow .2s}
+.portfolio-arrow:hover{transform:translate(2px,-2px);box-shadow:0 6px 14px #7658ff2b}
+.portfolio-detail{display:flex;gap:6px;flex-wrap:wrap;padding:0 20px 19px}
+.portfolio-detail span{font-size:9px;letter-spacing:.1px;color:#756b88;background:linear-gradient(110deg,#f2edff,#fff0f6);padding:6px 9px;border-radius:999px}
+.portfolio-note{line-height:1.6;padding-left:2px}
+.reviews{position:relative;overflow:hidden;background:linear-gradient(145deg,#fffaf5 0%,#f6f0ff 52%,#f0fdf8 100%)}
+.reviews-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}
+.review-card{background:linear-gradient(135deg,#ffffff 0%,#fff8fc 48%,#f3fff8 100%);border:1px solid rgba(137,118,255,0.14);border-radius:24px;padding:24px 22px 20px;box-shadow:0 14px 36px rgba(80,52,130,0.07)}
+.review-header{display:flex;align-items:center;gap:12px;margin-bottom:14px}
+.review-avatar{display:grid;place-items:center;width:46px;height:46px;border-radius:50%;background:linear-gradient(135deg,#7658ff,#ff6fae 65%,#6be1ca);color:#fff;font:800 15px/1 'Manrope',sans-serif;letter-spacing:-.04em}
+.review-meta{display:flex;flex-direction:column;gap:3px}
+.review-meta strong{font:800 16px/1.2 'Manrope',sans-serif;letter-spacing:-.03em;color:#1b2030}
+.review-meta span{font-size:13px;color:#6f7388}
+.review-stars{margin:0 0 14px;color:#ffb025;font-size:16px;letter-spacing:2px}
+.review-card p{margin:0;font-size:20px;line-height:1.75;color:#2d3342}
+@media(max-width:900px){.reviews-grid{grid-template-columns:1fr;gap:16px}}
+
+.contact-shell{display:grid;grid-template-columns:0.9fr 1.3fr;align-items:flex-start;gap:54px;max-width:1220px;margin:0 auto;padding:18px 0 8px}
+.contact-panel{padding-top:8px}
+.contact-panel h3{margin:0 0 20px;font:800 clamp(24px,2.4vw,34px)/1.1 'Manrope',sans-serif;letter-spacing:-.06em;color:#1a1f2f}
+.contact-info-list{display:flex;flex-direction:column;gap:28px;margin-top:8px}
+.contact-item{display:flex;align-items:flex-start;gap:14px;color:#1d2432;padding:12px 14px;border-radius:14px;background:linear-gradient(135deg,#f9efff,#fef1f7 45%,#edfdf8);border:1px solid rgba(137,118,255,0.14);box-shadow:0 10px 24px rgba(118,88,255,0.06)}
+.contact-item .icon{width:26px;height:26px;display:grid;place-items:center;flex-shrink:0;border-radius:50%;background:linear-gradient(135deg,#1f65f5,#3a8cf7);box-shadow:0 10px 18px rgba(37,105,238,0.18)}
+.contact-item .icon svg{width:14px;height:14px;fill:none;stroke:#fff;stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round}
+.contact-item strong{display:block;margin:0 0 5px;font:800 18px/1.2 'Manrope',sans-serif;letter-spacing:-.04em;color:#1d2432}
+.contact-item p{margin:0;line-height:1.55;color:#2e3340;font-size:17px;font-weight:500}
+.contact-item a{color:#1d2432;text-decoration:none}
+.contact-form{padding:10px 0 0}
+.contact-form-inner{background:linear-gradient(135deg,#f5f0ff 0%,#fff7fb 48%,#effcf6 100%);border:1px solid rgba(141,122,255,0.14);border-radius:18px;padding:22px 22px 18px;box-shadow:0 12px 24px rgba(139,150,171,0.08)}
+.contact-form h3{margin:0 0 18px;font:800 clamp(28px,2.7vw,38px)/1.1 'Manrope',sans-serif;letter-spacing:-.06em;color:#1b2030}
+.field-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px 20px}
+.field{display:flex;flex-direction:column;gap:8px}
+.field.full{grid-column:1 / -1}
+.field label{font-size:16px;font-weight:700;color:#1b2030;letter-spacing:-.02em}
+.field label .req{color:#db4a4a}
+.field input,.field select,.field textarea{width:100%;background:rgba(255,255,255,0.14);border:1px solid #ccd3db;border-radius:8px;padding:14px 14px;font:500 16px/1.4 'Manrope',sans-serif;color:#1f2330;outline:none;transition:border-color .2s,box-shadow .2s,background .2s}
+.field input:focus,.field select:focus,.field textarea:focus{border-color:#7487f5;box-shadow:0 0 0 4px rgba(116,135,245,0.08);background:#fff}
+.field textarea{min-height:130px;resize:vertical}
+.field select{appearance:none;background-image:linear-gradient(45deg,transparent 50%,#4f5870 50%),linear-gradient(135deg,#4f5870 50%,transparent 50%);background-position:calc(100% - 18px) calc(50% - 2px),calc(100% - 12px) calc(50% - 2px);background-size:6px 6px;background-repeat:no-repeat}
+.website-option{display:flex;flex-direction:column;align-items:stretch;gap:10px}
+.website-option .radio-group{display:inline-flex;align-items:center;gap:10px;flex-wrap:wrap;width:max-content;padding:4px;border-radius:999px;background:rgba(255,255,255,0.18);border:1px solid #d8dffc;box-shadow:inset 0 1px 0 rgba(255,255,255,0.35)}
+.website-option .radio-option{position:relative;display:inline-flex;align-items:center;justify-content:center;min-width:72px;padding:9px 16px;border-radius:999px;font:700 14px/1.3 'Manrope',sans-serif;color:#48506d;cursor:pointer;transition:all .2s ease}
+.website-option .radio-option input{position:absolute;opacity:0;pointer-events:none}
+.website-option .radio-option:has(input:checked){background:linear-gradient(135deg,#7658ff,#b45bdf 60%,#ff6fae);color:#fff;box-shadow:0 8px 18px rgba(118,88,255,0.18)}
+.website-url-group{display:none;margin-top:4px}
+.website-url-group.visible{display:block}
+.phone-input-wrap{display:flex;align-items:center;gap:8px;width:100%;background:linear-gradient(180deg,rgba(255,255,255,0.32),rgba(255,255,255,0.14));border:1px solid #d0d7e4;border-radius:10px;padding:0 8px;transition:border-color .2s,box-shadow .2s,background .2s;box-shadow:inset 0 1px 0 rgba(255,255,255,0.35);min-height:44px}
+.phone-input-wrap:focus-within{border-color:#7487f5;box-shadow:0 0 0 4px rgba(116,135,245,0.08),inset 0 1px 0 rgba(255,255,255,0.35);background:#fff}
+.country-code-picker{position:relative;display:flex;align-items:center;flex:0 0 92px;min-width:0}
+.country-code-trigger{display:flex;align-items:center;justify-content:space-between;gap:4px;width:100%;border:none;background:transparent;padding:8px 16px 8px 0;color:#1f2330;font:600 13px/1.3 'Manrope',sans-serif;cursor:pointer;outline:none;appearance:none;background-image:linear-gradient(45deg,transparent 50%,#4f5870 50%),linear-gradient(135deg,#4f5870 50%,transparent 50%);background-position:calc(100% - 5px) calc(50% - 2px),calc(100% - 0px) calc(50% - 2px);background-size:5px 5px;background-repeat:no-repeat}
+.country-code-display{white-space:nowrap}
+.country-code-menu{position:absolute;left:0;top:calc(100% + 8px);max-height:220px;min-width:180px;overflow:auto;padding:8px;border-radius:10px;border:1px solid #d9dfe8;background:#fff;box-shadow:0 16px 34px rgba(25,31,45,0.12);display:none;z-index:20}
+.country-code-picker.open .country-code-menu{display:block}
+.country-option{display:flex;align-items:center;justify-content:space-between;gap:10px;width:100%;padding:8px 10px;border:none;background:transparent;border-radius:8px;color:#1f2330;text-align:left;font:500 13px/1.3 'Manrope',sans-serif;cursor:pointer}
+.country-option:hover,.country-option.active{background:#f2f4ff}
+.hidden-country-select{display:none}
+.phone-input-wrap input{border:none;background:transparent;flex:1;padding:10px 0 10px 8px;margin:0;box-shadow:none;font:500 15px/1.3 'Manrope',sans-serif;color:#1f2330;border-left:1px solid rgba(140,150,172,0.28)}
+.phone-input-wrap input::placeholder{color:#768199}
+.phone-input-wrap input:focus{box-shadow:none;border:none;background:transparent;outline:none;border-left:1px solid rgba(140,150,172,0.28)}
+.form-row{display:flex;align-items:center;justify-content:space-between;gap:18px;margin-top:18px}
+.submit-button{display:inline-flex;align-items:center;justify-content:center;padding:15px 28px;border:0;border-radius:10px;background:#f0f2f6;color:#1f2631;font-weight:800;letter-spacing:.02em;cursor:pointer;transition:transform .2s,box-shadow .2s;background:linear-gradient(135deg,#f0f2f6,#e5e7ee)}
+.submit-button:hover{transform:translateY(-2px);box-shadow:0 10px 20px rgba(31,38,49,0.08)}
+.contact-actions{display:none}
+.project-content>p:not(.project-original){display:none}
+@media(max-width:900px){.contact-shell{grid-template-columns:1fr;gap:30px;padding-left:22px;padding-right:22px}.contact-form-inner{padding:18px}.field-grid{grid-template-columns:1fr}.form-row{flex-direction:column;align-items:stretch}.submit-button{width:100%}} 
+@media(max-width:640px){.contact-shell{padding-left:18px;padding-right:18px}.contact-panel h3,.contact-form h3{font-size:32px}.contact-item strong{font-size:17px}.contact-item p{font-size:14px}.contact-form-inner{padding:16px 15px}} 
+
+/* Complete contact panel and full navigation content */
+.site-header .nav{gap:clamp(12px,1.7vw,25px)}
+.site-header .nav>a:not(.nav-cta){white-space:nowrap}
+.project-card{position:relative;isolation:isolate;display:grid;grid-template-columns:1.15fr .85fr;align-items:center;gap:18px;min-height:390px;padding:52px 52px 42px;background:linear-gradient(120deg,#3c2b79 0%,#4c3d90 32%,#7a5ada 56%,#de87d4 100%);border-radius:36px;overflow:hidden;box-shadow:0 24px 60px rgba(80,52,130,0.25)}
+.project-card:before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 80% 30%,rgba(255,255,255,0.25),transparent 30%),radial-gradient(circle at 12% 92%,rgba(195,255,177,0.14),transparent 24%);pointer-events:none}
+.project-content{position:relative;z-index:2;max-width:760px}
+.project-content h2{margin:0 0 18px;font:700 clamp(36px,4vw,72px)/0.95 'Manrope',sans-serif;letter-spacing:-0.08em;color:#f5f1ff}
+.project-content h2 em{font-style:normal;background:linear-gradient(120deg,#ffd5eb 0%,#ff9ac0 18%,#c7d1ff 52%,#f3e0ff 100%);-webkit-background-clip:text;background-clip:text;color:transparent}
+.project-content h2 span{display:block}
+.project-original{margin:0 0 28px;max-width:580px;font-size:clamp(14px,1.3vw,17px);line-height:1.7;color:rgba(255,255,255,0.82)}
+.project-content h3{display:none}
+.contact-actions{max-width:760px;margin-top:0}
+.contact-actions .button-light{color:#1d1635;background:linear-gradient(135deg,#d7f88f,#b9f2d7);border:0;border-radius:18px;padding:16px 20px;font-size:clamp(13px,1.2vw,17px);font-weight:700;box-shadow:0 15px 35px rgba(110,160,98,0.22)}
+.contact-actions .button-light span{display:inline-flex;align-items:center;justify-content:center;width:18px;height:18px;margin-left:8px;vertical-align:middle}
+.contact-secondary{display:none}
+.project-visual{position:relative;z-index:1;height:320px;display:flex;align-items:flex-end;justify-content:center}
+.project-visual:before{content:"";position:absolute;inset:12% 8% 8% 12%;border-radius:50%;background:radial-gradient(circle,rgba(164,253,247,0.22),transparent 60%);filter:blur(4px)}
+.project-chart{position:absolute;right:12%;bottom:18px;width:320px;height:170px;display:flex;align-items:flex-end;gap:12px;transform:rotate(-8deg);}
+.project-chart .bar{display:block;width:32px;background:linear-gradient(180deg,#c5f6ff 0%,#8db6ff 25%,#c2a7ff 50%,#f7a9d2 100%);border-radius:10px 10px 0 0;box-shadow:0 0 18px rgba(149,235,255,0.38);opacity:0.9}
+.project-chart .bar:nth-child(1){height:64%}.project-chart .bar:nth-child(2){height:72%}.project-chart .bar:nth-child(3){height:55%}.project-chart .bar:nth-child(4){height:80%}.project-chart .bar:nth-child(5){height:94%}.project-chart .bar:nth-child(6){height:68%}.project-chart .bar:nth-child(7){height:84%}
+.project-arrow{position:absolute;right:8%;bottom:90px;width:200px;height:82px;background:linear-gradient(90deg,#d8f1ff 0%,#9ce2ff 22%,#ae87ff 50%,#f5a8d8 100%);clip-path:polygon(0 40%,72% 40%,72% 0,100% 50%,72% 100%,72% 62%,0 62%);transform:rotate(18deg);box-shadow:0 0 28px rgba(194,242,255,0.45)}
+.project-target{position:absolute;right:18%;bottom:24px;width:100px;height:100px;border-radius:50%;border:12px solid rgba(255,255,255,0.82);background:rgba(255,255,255,0.14);box-shadow:0 0 24px rgba(255,255,255,0.18)}
+.project-target:before,.project-target:after{content:"";position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);border-radius:50%}
+.project-target:before{width:52px;height:52px;border:8px solid rgba(255,255,255,0.7)}
+.project-target:after{width:16px;height:16px;background:#f4f7ff;box-shadow:0 0 16px rgba(255,255,255,0.7)}
+.project-orbit{position:absolute;right:0;bottom:0;width:250px;height:160px;border:2px solid rgba(255,255,255,0.4);border-color:rgba(255,255,255,0.38) transparent transparent transparent;border-radius:50% 50% 0 0;transform:rotate(18deg)}
+.project-bubble{position:absolute;border-radius:50%;background:rgba(255,255,255,0.18);border:1px solid rgba(255,255,255,0.22);box-shadow:inset 0 0 18px rgba(255,255,255,0.08)}
+.project-bubble.one{width:28px;height:28px;left:62%;bottom:150px}
+.project-bubble.two{width:18px;height:18px;left:78%;bottom:42px}
+.project-bubble.three{width:34px;height:34px;right:8%;bottom:160px}
+.project-bubble.four{width:42px;height:42px;left:18%;bottom:30px}
+.project-bubble.five{width:18px;height:18px;left:26%;bottom:88px}
+.project-side{display:none}
+.project-decor{display:none}
+.footer-links{display:flex;flex-wrap:wrap;gap:18px}
+.footer-links a{white-space:nowrap}
+@media(max-width:900px){.site-header .nav{gap:14px}.project-card{grid-template-columns:1fr;padding:36px 28px 30px}.project-content h2{font-size:clamp(42px,8vw,72px)}.project-original{max-width:100%}.project-visual{height:260px}} 
+@media(max-width:640px){.site-header .nav{gap:12px}.site-header .nav>a:not(.nav-cta){white-space:normal}.footer-links{gap:12px 16px}.project-card{padding:26px 22px 22px;border-radius:24px}.project-content h2{font-size:clamp(38px,11vw,58px);line-height:0.96}.project-original{font-size:15px;line-height:1.7}.contact-actions .button-light{width:100%;justify-content:center;padding:18px 20px;font-size:18px}.project-visual{height:230px}.project-chart{right:7%;bottom:20px;transform:rotate(-8deg) scale(0.85)}.project-arrow{right:12%;bottom:92px;width:160px}.project-target{right:20%;bottom:18px;transform:scale(0.9)}}
+</style>
+</head>
+<body>
+  <div class="scroll-progress" aria-hidden="true"><span></span></div>
+  <header class="site-header">
+    <a class="wordmark" href="#home" aria-label="Sudha Priya home">
+      <img src="assets/logo.png" alt="Sudha Priya logo">
+    </a>
+    <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false"><span></span><span></span></button>
+    <nav class="nav" aria-label="Main navigation">
+      <a href="#home">Home</a>
+      <a href="about.html">About</a>
+      <a href="#services">Services</a>
+      <a href="#approach">Our Approach</a>
+      <a href="#portfolio">Portfolio</a>
+      <a class="nav-cta" href="#contact"><span class="nav-cta-label">Let’s talk</span><span class="nav-cta-icon" aria-hidden="true">↗</span></a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section-wrap" id="home">
+      <div class="hero-copy reveal">
+        
+        <h1>Digital Marketing Driven by <em>Research, Strategy &amp; Growth</em></h1>
+        <p class="hero-description">I help businesses understand their market, connect with the right audience, strengthen their digital presence, and build sustainable online growth through research-driven digital marketing<br>.</p>
+        <div class="hero-actions">
+          <a class="button button-dark" href="#contact">Let's Work Together <span Explorearia-hidden="true">↗</span></a>
+        </div>
+        
+      </div>
+      <div class="hero-visual reveal">
+        <div class="visual-frame">
+          <img src="assets/replacement.png" alt="Sudha Priya">
+        </div>
+        <div class="visual-orbit orbit-one"></div><div class="visual-orbit orbit-two"></div>
+        
+      </div>
+      
+    </section>
+
+    <section class="about section-wrap section-pad" id="about">
+      <div class="section-kicker"><span>01 / ABOUT</span><span class="kicker-rule"></span></div>
+      <div class="about-grid">
+        <div class="about-heading reveal">
+          
+          <h2>About Me</h2>
+          <h3>Developing With a Passion While Exploring the World</h3>
+          <div class="about-mark" aria-hidden="true">“</div>
+        </div>
+        <div class="about-copy reveal">
+          <h4>Where Analytical Engineering Meets Strategic Marketing</h4>
+          <p>I began my professional journey as a Mechanical Design Engineer and later pursued a Master’s degree at the University of New Haven, USA. In engineering, decisions are never made on assumptions or superficial trends—they require rigorous analysis, deep structural understanding, and precise problem-solving.</p>
+          <p>When I transitioned into digital marketing, I brought this exact structured mindset with me. My engineering background is not separate from my marketing career—it actively powers it, allowing me to decode audience behavior and construct sustainable systems for business growth.</p>
+          <div class="about-actions"><a class="button button-outline" href="#contact">Contact Me <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="services section-wrap section-pad" id="services">
+      <div class="section-kicker"><span>02 / SERVICES</span><span class="kicker-rule"></span></div>
+      <div class="section-heading reveal">
+        <div><h2>What Services I'm Providing</h2></div>
+        <p class="section-intro">Tailored Digital Solutions for Sustainable Business Growth</p>
+      </div>
+      <div class="service-visual-band reveal" aria-hidden="true">
+        <div class="visual-band-card"><img src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?auto=format&fit=crop&w=1000&q=90" alt="Website design on a desktop screen"><span>Digital experiences <b>↗</b></span></div>
+        <div class="visual-band-card"><img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1000&q=90" alt="Marketing analytics dashboard"><span>Data-led decisions <b>↗</b></span></div>
+        <div class="visual-band-card"><img src="https://images.unsplash.com/photo-1559028012-481c04fa702d?auto=format&fit=crop&w=1000&q=90" alt="Creative branding workspace"><span>Brand storytelling <b>↗</b></span></div>
+      </div>
+      <div class="services-grid">
+        <article class="service-card reveal"><div class="service-top"><span class="service-number">01</span><span class="service-icon">↗</span></div><h3>Website design</h3><p>Create a memorable first impression with modern, user-friendly website designs that reflect your brand identity and make every visitor’s journey effortless.</p><ul><li>Custom Website Design</li><li>UI/UX Design</li><li>Mobile-responsive Layouts</li><li>Wireframing &amp; Prototypes</li><li>Brand focussed visuals</li><li>User Journey design</li></ul></article>
+        <article class="service-card reveal"><div class="service-top"><span class="service-number">02</span><span class="service-icon">↗</span></div><h3>Website Development</h3><p>Build a powerful online presence with responsive websites designed to engage visitors, showcase your brand, and turn potential customers into enquiries.</p><ul><li>WordPress and Elementor</li><li>HTML, CSS and JavaScript</li><li>Static and dynamic sites</li><li>Business and portfolio sites</li><li>Landing pages and blogs</li><li>Speed  optimization</li></ul></article>
+        <article class="service-card reveal"><div class="service-top"><span class="service-number">03</span><span class="service-icon">↗</span></div><h3>E-Commerce Solutions</h3><p>Launch and grow your online store with seamless shopping experiences that make browsing easier, build customer trust, and encourage more completed purchases.</p><ul><li>WooCommerce and Shopify</li><li>Product catalog setup</li><li>Payment gateway setup</li><li>Cart and checkout setup</li><li>Inventory management</li><li>Mobile-friendly stores</li></ul></article>
+        <article class="service-card reveal"><div class="service-top"><span class="service-number">04</span><span class="service-icon">↗</span></div><h3>Content &amp; Video Editing</h3><p>Capture attention with compelling content and videos that tell your brand story, connect with your audience, and turn engagement into business opportunities.</p><ul><li>SEO blogs and website copy</li><li>Reels and short videos</li><li>YouTube video editing</li><li>Infographics and case studies</li><li>Social posts and captions</li><li>Content distribution</li></ul></article>
+        <article class="service-card reveal"><div class="service-top"><span class="service-number">05</span><span class="service-icon">↗</span></div><h3>Branding &amp; Creative Design</h3><p>Build a recognisable brand with consistent visual communication that expresses your business personality, earns customer trust, and stands out in the market.</p><ul><li>Logo  &amp; Brand identity</li><li>Brand colors and typography</li><li>Social media graphics</li><li>Brochures and banners</li><li>Promotional creatives</li><li>Visual brand guidelines</li></ul></article>
+        <article class="service-card reveal"><div class="service-top"><span class="service-number">06</span><span class="service-icon">↗</span></div><h3>Email &amp;  Whatsapp marketing</h3><p>Stay connected with your audience through personalised campaigns that nurture leads, share valuable updates, strengthen relationships, and drive repeat business.</p><ul><li>Email campaign setup</li><li>Newsletter design</li><li>WhatsApp campaigns</li><li>Audience segmentation</li><li>Automated follow-ups</li><li>Performance reporting</li></ul></article>
+        <article class="service-card reveal"><div class="service-top"><span class="service-number">07</span><span class="service-icon">↗</span></div><h3>Search Engine Optimization</h3><p>Improve your website’s visibility on Google with ethical SEO tactics that attract relevant visitors, strengthen rankings, and generate quality organic leads.</p><ul><li>Keyword research</li><li>On-page and off-page SEO</li><li>Technical SEO</li><li>Local SEO and listings</li><li>Competitor analysis</li><li>Rank and traffic tracking</li></ul></article>
+        <article class="service-card reveal"><div class="service-top"><span class="service-number">08</span><span class="service-icon">↗</span></div><h3>Paid Advertising (PPC)</h3><p>Drive instant visibility on search networks with targeted PPC campaigns that attract high-intent clicks, optimize ad spend, and generate measurable paid leads.</p><ul><li>Google Ads and Meta Ads</li><li>Market research</li><li>Keywords and audiences</li><li>Campaign optimization</li><li>Budget and bid management</li><li>Conversion tracking</li></ul></article>
+        <article class="service-card reveal"><div class="service-top"><span class="service-number">09</span><span class="service-icon">↗</span></div><h3>Social Media Marketing</h3><p>Turn your brand’s channels into a direct growth engine with focused SMM tactics that increase awareness, build community, and attract qualified buyers.</p><ul><li>Instagram and Facebook</li><li>LinkedIn and X management</li><li>YouTube optimization</li><li>Content planning</li><li>Paid social campaigns</li><li>Community engagement</li></ul></article>
+        <article class="service-card reveal"><div class="service-top"><span class="service-number">10</span><span class="service-icon">↗</span></div><h3>AI Video creation</h3><p>Boost your brand reach with expert AI video creation services designed to captivate modern audiences,<br>lift search visibility,<br>and generate high-intent leads.</p><ul><li>AI scriptwriting</li><li>Realistic avatar voiceovers</li><li>Text-to-video editing</li><li>Multilingual captions</li><li>Video SEO</li><li>Conversion rate tracking</li></ul></article>
+        <article class="service-card reveal"><div class="service-top"><span class="service-number">11</span><span class="service-icon">↗</span></div><h3>Affiliate marketing</h3><p>Scale your brand’s revenue with strategic affiliate marketing services that recruit top partners,<br>maximize conversions,<br>and drive reliable performance sales.</p><ul><li>Partner recruitment</li><li>Affiliate network management</li><li>Commission modeling</li><li>Fraud prevention</li><li>Attribution tracking</li><li>Performance analytics</li></ul></article>
+        <article class="service-card reveal"><div class="service-top"><span class="service-number">12</span><span class="service-icon">↗</span></div><h3>App development</h3><p>Accelerate growth with SEO-friendly web and mobile app development crafted by digital marketers to attract visitors&amp;<br>boost engagement</p><ul><li>Custom iOS and Android apps</li><li>Responsive web platforms</li><li>App Store Optimization</li><li>Core Web Vitals</li><li>Conversion-led UX</li><li>SEO architecture</li></ul></article>
+      </div>
+    </section>
+
+
+    <section class="approach section-wrap section-pad" id="approach">
+      <div class="section-kicker"><span>03 / PROCESS</span><span class="kicker-rule"></span></div>
+      <div class="section-heading reveal"><div><h2>Our Approach</h2></div><p class="section-intro">We believe in a thoughtful data-driven and transparent approach to digital marketing .Our Process is designed to understand your business.Create the right strategy and deliver the measurable results</p></div>
+      <div class="approach-list">
+        <article class="approach-item reveal"><span class="approach-index">01</span><div><h3>𝐈𝐧𝐛𝐨𝐮𝐧𝐝 𝐌𝐚𝐫𝐤𝐞𝐭𝐢𝐧𝐠</h3><p>We dive deep into your business, industry, competitors and audience to build strategies backed by data, insights and real market trends.</p></div><span class="approach-arrow">↗</span></article>
+        <article class="approach-item reveal"><span class="approach-index">02</span><div><h3>𝐂𝐮𝐬𝐭𝐨𝐦𝐢𝐳𝐞𝐝 𝐌𝐚𝐫𝐤𝐞𝐭𝐢𝐧𝐠 𝐏𝐥𝐚𝐧𝐬</h3><p>Every business is unique. We create tailored digital marketing plans that align with your goals, audience and budget for lasting growth.</p></div><span class="approach-arrow">↗</span></article>
+        <article class="approach-item reveal"><span class="approach-index">03</span><div><h3>𝐂𝐨𝐧𝐬𝐢𝐬𝐭𝐞𝐧𝐭 𝐏𝐞𝐫𝐟𝐨𝐫𝐦𝐚𝐧𝐜𝐞 𝐓𝐫𝐚𝐜𝐤𝐢𝐧𝐠</h3><p>We monitor key metrics, analyze performance and make data-backed adjustments to ensure your campaigns  keep improving</p></div><span class="approach-arrow">↗</span></article>
+        <article class="approach-item reveal"><span class="approach-index">04</span><div><h3>𝐓𝐫𝐚𝐧𝐬𝐩𝐚𝐫𝐞𝐧𝐭 𝐑𝐞𝐩𝐨𝐫𝐭𝐢𝐧𝐠</h3><p>You'll always know what's happening. We provide clear, easy-to-understand reports with real insights, not just numbers and metrics data.</p></div><span class="approach-arrow">↗</span></article>
+        <article class="approach-item reveal"><span class="approach-index">05</span><div><h3>𝐅𝐨𝐜𝐮𝐬 𝐨𝐧 𝐑𝐎𝐈 &amp; 𝐂𝐨𝐧𝐯𝐞𝐫𝐬𝐢𝐨𝐧</h3><p>Our goal is not just traffic but real business impact.We Optimize every strategy to bring quality leads,higher conversion and long-term ROI</p></div><span class="approach-arrow">↗</span></article>
+      </div>
+    </section>
+
+    <section class="portfolio section-wrap section-pad" id="portfolio">
+      <div class="section-kicker"><span>04 / PORTFOLIO</span><span class="kicker-rule"></span></div>
+      <div class="section-heading reveal">
+        <div><h2>Selected Work &amp; Creative Direction</h2></div>
+        <p class="section-intro">A visual look at digital experiences, content, and marketing strategy.</p>
+      </div>
+      <div class="portfolio-grid">
+        <article class="portfolio-card portfolio-feature reveal" data-category="marketing">
+          <div class="portfolio-image"><img src="https://sudhapriya.com/wp-content/uploads/2026/10/RWfK87oZU6rwjsJa8UApOJ9k3i_51PjVoEG66Gl8FMonpA1Xij7Z9o2J0MS49UzAw5lXMAHVOlKZz3nUZb0OjQ.png" alt="Coincred SEO case study featuring strategic SEO growth"><span class="portfolio-tag">01 / SEO CASE STUDY</span></div>
+          <div class="portfolio-meta"><div><h3>Driving Organic Growth for Coincred Through Strategic SEO</h3><p>At Coincred, I built and executed an SEO strategy that increased organic traffic, strengthened keyword rankings and generated quality leads.</p></div><a class="portfolio-arrow" href="https://sudhapriya.com/contact/" target="_blank" rel="noreferrer" aria-label="Book a free SEO consultation">↗</a></div>
+          <div class="portfolio-detail"><span>SEO strategy</span><span>Organic growth</span><span>Lead generation</span></div>
+        </article>
+
+          <article class="portfolio-card portfolio-feature reveal" data-category="marketing">
+          <div class="portfolio-image"><img src="assets/riwaaya.jpg" alt="Coincred SEO case study featuring strategic SEO growth"><span class="portfolio-tag">02 / BRAND LOGO DESIGN</span></div>
+          <div class="portfolio-meta"><div><h3>Crafting a Luxury Brand Identity for Riwaaya Heritage </h3><p>For Riwaaya Heritage, I designed a premium visual identity that blends royal Indian heritage with modern luxury, creating a distinctive brand presence through elegant typography, golden aesthetics and timeless design.</p></div><a class="portfolio-arrow" href="https://sudhapriya.com/contact/" target="_blank" rel="noreferrer" aria-label="Book a free SEO consultation">↗</a></div>
+          <div class="portfolio-detail"><span>Logo Design</span><span>Lead generation</span></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="reviews section-wrap section-pad" id="reviews">
+      <div class="section-kicker"><span>05 / REVIEWS</span><span class="kicker-rule"></span></div>
+      <div class="section-heading reveal">
+        <div><h2>What Clients Say</h2></div>
+        <p class="section-intro">Real feedback from businesses that wanted sharper strategy, clearer growth, and stronger digital execution.</p>
+      </div>
+      <div class="reviews-grid">
+        <article class="review-card reveal">
+          <div class="review-header">
+            <span class="review-avatar">AK</span>
+            <div class="review-meta"><strong>Advik Dwivedi</strong><span>CEO, Biztara Technologies</span></div>
+          </div>
+          <div class="review-stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <p>“Sudha Priya brought clarity to our digital strategy and transformed the way we present our brand online. The process was thoughtful, professional, and deeply results-focused.”</p>
+        </article>
+        <article class="review-card reveal">
+          <div class="review-header">
+            <span class="review-avatar">MR</span>
+            <div class="review-meta"><strong>Meera R.</strong><span>Marketing Lead, Aster Labs</span></div>
+          </div>
+          <div class="review-stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <p>“The website, content direction, and social strategy all felt cohesive and premium. We saw stronger engagement almost immediately after launch.”</p>
+        </article>
+        <article class="review-card reveal">
+          <div class="review-header">
+            <span class="review-avatar">VP</span>
+            <div class="review-meta"><strong>Vikram P.</strong><span>Co-founder, Elevate Studio</span></div>
+          </div>
+          <div class="review-stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <p>“Sudha Priya combines strategy with execution beautifully. Every recommendation was practical, easy to understand, and aligned with our growth goals.”</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section-wrap section-pad reveal" id="contact">
+      <div class="contact-shell">
+        <div class="contact-panel">
+          <h3>Find Us:</h3>
+          <div class="contact-info-list">
+            <div class="contact-item">
+              <span class="icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M12 21s6-4.35 6-11a6 6 0 1 0-12 0c0 6.65 6 11 6 11Z"/><circle cx="12" cy="10" r="2.5"/></svg>
+              </span>
+              <div>
+                <strong>Office Address</strong>
+                <p>Flat no-101, 2nd floor,Mavi Tower, Landmark-KFC,Sector-11, Vasundhara, Ghaziabad, UP-201012, India</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <span class="icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M12 7v5l3 2"/><circle cx="12" cy="12" r="8"/></svg>
+              </span>
+              <div>
+                <strong>Office Hours</strong>
+                <p>Monday-Saturday<br>10 AM - 6 PM</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <span class="icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M5 5.5a2 2 0 0 1 2-2h1.2a2 2 0 0 1 1.95 1.57l.76 3.85a2 2 0 0 1-1.74 2.37l-1.1.2a14.26 14.26 0 0 0 8.81 8.82l.2-1.1a2 2 0 0 1 2.37-1.74l3.85.76A2 2 0 0 1 19.5 16.8V18a2 2 0 0 1-2 2A16 16 0 0 1 5 6.5v-1Z"/></svg>
+              </span>
+              <div>
+                <strong>Phone</strong>
+                <p><a href="tel:+918929652604">+91 89296 52604</a><br>Call or Text</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <span class="icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M4 7.5A2.5 2.5 0 0 1 6.5 5h11A2.5 2.5 0 0 1 20 7.5v9A2.5 2.5 0 0 1 17.5 19h-11A2.5 2.5 0 0 1 4 16.5v-9Z"/><path d="m5 7 7 5 7-5"/></svg>
+              </span>
+              <div>
+                <strong>Email</strong>
+                <p><a href="mailto:sudha.techies@gmail.com">sudha.techies@gmail.com</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form">
+          <div class="contact-form-inner">
+            <h3>Tell Us About Your Project!</h3>
+            <form id="contact-form">
+              <div class="field-grid">
+                <div class="field">
+                  <label for="first-name">First Name <span class="req">*</span></label>
+                  <input id="first-name" type="text" placeholder="">
+                </div>
+                <div class="field">
+                  <label for="last-name">Last Name <span class="req">*</span></label>
+                  <input id="last-name" type="text" placeholder="">
+                </div>
+
+                <div class="field">
+                  <label for="email">Email <span class="req">*</span></label>
+                  <input id="email" type="email">
+                </div>
+                <div class="field">
+                  <label for="phone">Phone Number <span class="req">*</span></label>
+                  <div class="phone-input-wrap">
+                    <div class="country-code-picker" aria-label="Select country code">
+                      <button type="button" class="country-code-trigger" aria-expanded="false" aria-haspopup="listbox">
+                        <span class="country-code-display">🇮🇳 +91</span>
+                      </button>
+                      <div class="country-code-menu" role="listbox" aria-label="Country code options">
+                        <div class="country-code-options"></div>
+                      </div>
+                    </div>
+                    <select class="hidden-country-select" id="country-code" aria-label="Select country code">
+                      <option value="+1" data-flag="🇺🇸">United States (+1)</option>
+                      <option value="+44" data-flag="🇬🇧">United Kingdom (+44)</option>
+                      <option value="+91" data-flag="🇮🇳" selected>India (+91)</option>
+                      <option value="+61" data-flag="🇦🇺">Australia (+61)</option>
+                      <option value="+971" data-flag="🇦🇪">UAE (+971)</option>
+                      <option value="+93" data-flag="🇦🇫">Afghanistan (+93)</option>
+                      <option value="+355" data-flag="🇦🇱">Albania (+355)</option>
+                      <option value="+213" data-flag="🇩🇿">Algeria (+213)</option>
+                      <option value="+376" data-flag="🇦🇩">Andorra (+376)</option>
+                      <option value="+244" data-flag="🇦🇴">Angola (+244)</option>
+                      <option value="+54" data-flag="🇦🇷">Argentina (+54)</option>
+                      <option value="+43" data-flag="🇦🇹">Austria (+43)</option>
+                      <option value="+973" data-flag="🇧🇭">Bahrain (+973)</option>
+                      <option value="+32" data-flag="🇧🇪">Belgium (+32)</option>
+                      <option value="+55" data-flag="🇧🇷">Brazil (+55)</option>
+                      <option value="+359" data-flag="🇧🇬">Bulgaria (+359)</option>
+                      <option value="+237" data-flag="🇨🇲">Cameroon (+237)</option>
+                      <option value="+1" data-flag="🇨🇦">Canada (+1)</option>
+                      <option value="+56" data-flag="🇨🇱">Chile (+56)</option>
+                      <option value="+86" data-flag="🇨🇳">China (+86)</option>
+                      <option value="+57" data-flag="🇨🇴">Colombia (+57)</option>
+                      <option value="+506" data-flag="🇨🇷">Costa Rica (+506)</option>
+                      <option value="+385" data-flag="🇭🇷">Croatia (+385)</option>
+                      <option value="+357" data-flag="🇨🇾">Cyprus (+357)</option>
+                      <option value="+420" data-flag="🇨🇿">Czech Republic (+420)</option>
+                      <option value="+45" data-flag="🇩🇰">Denmark (+45)</option>
+                      <option value="+593" data-flag="🇪🇨">Ecuador (+593)</option>
+                      <option value="+966" data-flag="🇸🇦">Saudi Arabia (+966)</option>
+                      <option value="+27" data-flag="🇿🇦">South Africa (+27)</option>
+                      <option value="+34" data-flag="🇪🇸">Spain (+34)</option>
+                      <option value="+46" data-flag="🇸🇪">Sweden (+46)</option>
+                      <option value="+41" data-flag="🇨🇭">Switzerland (+41)</option>
+                      <option value="+65" data-flag="🇸🇬">Singapore (+65)</option>
+                      <option value="+94" data-flag="🇱🇰">Sri Lanka (+94)</option>
+                      <option value="+66" data-flag="🇹🇭">Thailand (+66)</option>
+                      <option value="+90" data-flag="🇹🇷">Turkey (+90)</option>
+                      <option value="+380" data-flag="🇺🇦">Ukraine (+380)</option>
+                      <option value="+598" data-flag="🇺🇾">Uruguay (+598)</option>
+                      <option value="+58" data-flag="🇻🇪">Venezuela (+58)</option>
+                      <option value="+84" data-flag="🇻🇳">Vietnam (+84)</option>
+                      <option value="+62" data-flag="🇮🇩">Indonesia (+62)</option>
+                      <option value="+98" data-flag="🇮🇷">Iran (+98)</option>
+                      <option value="+964" data-flag="🇮🇶">Iraq (+964)</option>
+                      <option value="+353" data-flag="🇮🇪">Ireland (+353)</option>
+                      <option value="+44" data-flag="🇮🇲">Isle of Man (+44)</option>
+                      <option value="+972" data-flag="🇮🇱">Israel (+972)</option>
+                      <option value="+39" data-flag="🇮🇹">Italy (+39)</option>
+                      <option value="+81" data-flag="🇯🇵">Japan (+81)</option>
+                      <option value="+962" data-flag="🇯🇴">Jordan (+962)</option>
+                      <option value="+254" data-flag="🇰🇪">Kenya (+254)</option>
+                      <option value="+82" data-flag="🇰🇷">South Korea (+82)</option>
+                      <option value="+965" data-flag="🇰🇼">Kuwait (+965)</option>
+                      <option value="+60" data-flag="🇲🇾">Malaysia (+60)</option>
+                      <option value="+52" data-flag="🇲🇽">Mexico (+52)</option>
+                      <option value="+212" data-flag="🇲🇦">Morocco (+212)</option>
+                      <option value="+31" data-flag="🇳🇱">Netherlands (+31)</option>
+                      <option value="+234" data-flag="🇳🇬">Nigeria (+234)</option>
+                      <option value="+47" data-flag="🇳🇴">Norway (+47)</option>
+                      <option value="+92" data-flag="🇵🇰">Pakistan (+92)</option>
+                      <option value="+51" data-flag="🇵🇪">Peru (+51)</option>
+                      <option value="+63" data-flag="🇵🇭">Philippines (+63)</option>
+                      <option value="+48" data-flag="🇵🇱">Poland (+48)</option>
+                      <option value="+351" data-flag="🇵🇹">Portugal (+351)</option>
+                      <option value="+40" data-flag="🇷🇴">Romania (+40)</option>
+                      <option value="+7" data-flag="🇷🇺">Russia (+7)</option>
+                      <option value="+381" data-flag="🇷🇸">Serbia (+381)</option>
+                      <option value="+421" data-flag="🇸🇰">Slovakia (+421)</option>
+                      <option value="+386" data-flag="🇸🇮">Slovenia (+386)</option>
+                    </select>
+                    <input id="phone" type="tel" inputmode="numeric" placeholder="Phone number">
+                  </div>
+                </div>
+
+                <div class="field">
+                  <label for="company">Company</label>
+                  <input id="company" type="text">
+                </div>
+                <div class="field">
+                  <label for="source">How did you hear about us? <span class="req">*</span></label>
+                  <select id="source">
+                    <option value="">Google Search</option>
+                    <option value="social">Social Media</option>
+                    <option value="referral">Referral</option>
+                    <option value="other">Other</option>
+                  </select>
+                </div>
+
+                <div class="field full website-option">
+                  <label>Do you have a website? <span class="req">*</span></label>
+                  <div class="radio-group">
+                    <label class="radio-option"><input type="radio" name="website-exists" value="yes"> Yes</label>
+                    <label class="radio-option"><input type="radio" name="website-exists" value="no" checked> No</label>
+                  </div>
+                  <div class="website-url-group" id="website-url-group">
+                    <input id="website-url" type="url" placeholder="https://example.com" aria-label="Website URL">
+                  </div>
+                </div>
+
+                <div class="field full">
+                  <label for="message">Requirement</label>
+                  <textarea id="message"></textarea>
+                </div>
+              </div>
+
+              <div class="form-row" style="margin-top:18px;justify-content:flex-start;">
+                <button class="submit-button" type="submit">Submit</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner section-wrap">
+      <div class="footer-brand">
+        <a class="wordmark" href="#home" aria-label="Sudha Priya home">
+          <img src="assets/footer.png" alt="Sudha Priya logo">
+        </a>
+      </div>
+      <div class="footer-copy">
+        <p>Helping brands grow with strategy, design, and performance-driven digital marketing.</p>
+      </div>
+      <div class="footer-links">
+        <a href="http://linkedin.com/in/sudhapriya" target="_blank" rel="noreferrer"><img src="assets/in.png" alt="LinkedIn icon"><span>LinkedIn</span></a>
+        <a href="https://www.facebook.com/manu.priya.520562" target="_blank" rel="noreferrer"><img src="assets/fb.png" alt="Facebook icon"><span>Facebook</span></a>
+        <a href="https://www.instagram.com/sudhapriya799/" target="_blank" rel="noreferrer"><img src="assets/insta.png" alt="Instagram icon"><span>Instagram</span></a>
+        <a href="https://wa.me/message/GJ7V5F4A2ZPSD1" target="_blank" rel="noreferrer"><img src="assets/whatsapp.avif" alt="WhatsApp icon"><span>WhatsApp</span></a>
+      </div>
+      <div class="footer-bottom">
+        <span class="copyright">sudhapriya.com</span>
+      </div>
+    </div>
+  </footer>
+  <script>
+const toggle = document.querySelector('.menu-toggle');
+const nav = document.querySelector('.nav');
+if (toggle && nav) {
+  toggle.addEventListener('click', () => {
+    const open = nav.classList.toggle('open');
+    toggle.setAttribute('aria-expanded', String(open));
+    toggle.setAttribute('aria-label', open ? 'Close navigation' : 'Open navigation');
+  });
+  nav.querySelectorAll('a').forEach(link => link.addEventListener('click', () => {
+    nav.classList.remove('open');
+    toggle.setAttribute('aria-expanded', 'false');
+    toggle.setAttribute('aria-label', 'Open navigation');
+  }));
+}
+const revealItems = document.querySelectorAll('.reveal');
+if ('IntersectionObserver' in window) {
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('is-visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.12 });
+  revealItems.forEach(item => observer.observe(item));
+} else {
+  revealItems.forEach(item => item.classList.add('is-visible'));
+}
+
+const progressBar = document.querySelector('.scroll-progress span');
+const backToTop = document.querySelector('.back-to-top');
+const updateScrollUI = () => {
+  const scrollable = document.documentElement.scrollHeight - window.innerHeight;
+  const progress = scrollable > 0 ? (window.scrollY / scrollable) * 100 : 0;
+  if (progressBar) progressBar.style.width = `${progress}%`;
+  if (backToTop) backToTop.classList.toggle('visible', window.scrollY > 520);
+};
+window.addEventListener('scroll', updateScrollUI, { passive: true });
+updateScrollUI();
+if (backToTop) backToTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+
+// Portfolio category filters
+const portfolioFilters = document.querySelectorAll('.portfolio-filter');
+const portfolioCards = document.querySelectorAll('.portfolio-card[data-category]');
+portfolioFilters.forEach(button => {
+  button.addEventListener('click', () => {
+    const filter = button.dataset.filter;
+    portfolioFilters.forEach(item => {
+      const active = item === button;
+      item.classList.toggle('active', active);
+      item.setAttribute('aria-pressed', String(active));
+    });
+    portfolioCards.forEach(card => {
+      card.hidden = filter !== 'all' && card.dataset.category !== filter;
+    });
+  });
+});
+
+const countrySelect = document.getElementById('country-code');
+const countryPicker = document.querySelector('.country-code-picker');
+const countryDisplay = document.querySelector('.country-code-display');
+const countryTrigger = document.querySelector('.country-code-trigger');
+const countryOptionsBox = document.querySelector('.country-code-options');
+
+if (countrySelect && countryPicker && countryDisplay && countryTrigger && countryOptionsBox) {
+  const updatePicker = () => {
+    const selected = countrySelect.options[countrySelect.selectedIndex];
+    const flag = selected.dataset.flag || '🌍';
+    const value = selected.value || '+91';
+    countryDisplay.textContent = `${flag} ${value}`;
+    const options = Array.from(countryOptionsBox.querySelectorAll('.country-option'));
+    options.forEach(option => {
+      const isActive = option.dataset.value === value;
+      option.classList.toggle('active', isActive);
+      option.setAttribute('aria-selected', String(isActive));
+    });
+  };
+
+  Array.from(countrySelect.options).forEach(option => {
+    const button = document.createElement('button');
+    button.type = 'button';
+    button.className = 'country-option';
+    button.dataset.value = option.value;
+    button.setAttribute('role', 'option');
+    button.setAttribute('aria-selected', String(option.selected));
+    button.innerHTML = `<span>${option.textContent}</span><span>${option.value}</span>`;
+    button.addEventListener('click', () => {
+      countrySelect.value = option.value;
+      updatePicker();
+      countryPicker.classList.remove('open');
+      countryTrigger.setAttribute('aria-expanded', 'false');
+    });
+    countryOptionsBox.appendChild(button);
+  });
+
+  countryTrigger.addEventListener('click', () => {
+    const open = countryPicker.classList.toggle('open');
+    countryTrigger.setAttribute('aria-expanded', String(open));
+  });
+
+  document.addEventListener('click', event => {
+    if (!countryPicker.contains(event.target)) {
+      countryPicker.classList.remove('open');
+      countryTrigger.setAttribute('aria-expanded', 'false');
+    }
+  });
+
+  countrySelect.addEventListener('change', updatePicker);
+  updatePicker();
+}
+
+const websiteYes = document.querySelector('input[name="website-exists"][value="yes"]');
+const websiteNo = document.querySelector('input[name="website-exists"][value="no"]');
+const websiteGroup = document.getElementById('website-url-group');
+const websiteUrlInput = document.getElementById('website-url');
+
+const toggleWebsiteField = () => {
+  const hasWebsite = websiteYes && websiteYes.checked;
+  if (websiteGroup) {
+    websiteGroup.classList.toggle('visible', hasWebsite);
+  }
+  if (websiteUrlInput) {
+    websiteUrlInput.required = hasWebsite;
+  }
+};
+
+if (websiteYes && websiteNo) {
+  websiteYes.addEventListener('change', toggleWebsiteField);
+  websiteNo.addEventListener('change', toggleWebsiteField);
+  toggleWebsiteField();
+}
+
+const contactForm = document.getElementById('contact-form');
+if (contactForm) {
+  contactForm.addEventListener('submit', event => {
+    event.preventDefault();
+
+    const firstName = document.getElementById('first-name')?.value?.trim() || '';
+    const lastName = document.getElementById('last-name')?.value?.trim() || '';
+    const email = document.getElementById('email')?.value?.trim() || '';
+    const phone = document.getElementById('phone')?.value?.trim() || '';
+    const company = document.getElementById('company')?.value?.trim() || '';
+    const source = document.getElementById('source')?.value || '';
+    const message = document.getElementById('message')?.value?.trim() || '';
+    const selectedCountryCode = countrySelect?.value || '+91';
+    const hasWebsite = document.querySelector('input[name="website-exists"]:checked')?.value === 'yes';
+    const websiteUrl = document.getElementById('website-url')?.value?.trim() || '';
+
+    const fullName = [firstName, lastName].filter(Boolean).join(' ');
+    const sourceLabel = {
+      '': 'Google Search',
+      social: 'Social Media',
+      referral: 'Referral',
+      other: 'Other'
+    }[source] || source || 'Not specified';
+
+    const whatsappText = [
+      'Hello Sudha Priya,',
+      fullName ? `Name: ${fullName}` : '',
+      email ? `Email: ${email}` : '',
+      phone ? `Phone: ${selectedCountryCode} ${phone}` : '',
+      company ? `Company: ${company}` : '',
+      `Source: ${sourceLabel}`,
+      `Website: ${hasWebsite ? (websiteUrl || 'Yes, website provided') : 'No website'}`,
+      message ? `Requirement: ${message}` : ''
+    ].filter(Boolean).join('\n');
+
+    const whatsappLink = `https://wa.me/message/GJ7V5F4A2ZPSD1?text=${encodeURIComponent(whatsappText)}`;
+    window.open(whatsappLink, '_blank');
+  });
+}
+  </script>
+  <button class="back-to-top" type="button" aria-label="Back to top">↑</button>
+</body>
+</html>
